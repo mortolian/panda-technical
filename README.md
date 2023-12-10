@@ -16,15 +16,17 @@ basic dashboard to view the information.
 
 You need to use the following:
 
-- [ ] Laravel
-- [ ] Laravel standards and services (e.g. Laravel Http, not curl, etc).
+- [x] Laravel
+- [x] Laravel standards 
+- [x] Laravel services (e.g. Laravel Http, not curl, etc).
 - [ ] Tailwind
 - [ ] Alpine (if you use JS)
 - [ ] A charts library of your choice. Recommendations would be Chart.js or Apache Echarts.
 - [ ] For the environment we recommend a docker-compose.yml in the main repo that brings
   up any services you need. If you are not familiar with docker you can document any other
   method required in a README.
-- [ ] Please create a GitHub repo and share it with dbfx on GitHub (https://github.com/dbfx)
+- [x] Please create a GitHub repo 
+- [ ] share it with dbfx on GitHub (https://github.com/dbfx)
 
 ### Part 1: Authentication
 
@@ -63,13 +65,15 @@ Examples would be:
 
 ## Project Setup
 
+- Laravel v10.35.0 (PHP v8.2.13)
+
 The project will run in development mode using Laravel Sail to facilitate a local Docker `Development` and `Testing`
 environment.
 If you are unfamiliar with sail you can find the documentation here: https://laravel.com/docs/10.x/sail#main-content
 
 The project runs using the latest versions or at least latest stable versions of everything requested.
 
-The project was developed in `PHPStorm`, but should work well in any IDE with the standards being checked with
+The project was developed using `PHPStorm` as the IDE, but should be viewable in any IDE with the standards being checked with
 `Laravel PINT` and `.editorconfig`.
 
 Clone the project
@@ -109,3 +113,8 @@ Run Unit and Feature Tests
 ```bash
 
 ```
+
+## Project References and Attributions
+
+- https://www.joinpanda.com/
+- [README.laravel.md](docs/README.laravel.md)
