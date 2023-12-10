@@ -1,3 +1,4 @@
+![horizontal-sm.webp](docs%2Fhorizontal-sm.webp)
 # Panda Technical Project - Laravel API Consumer
 
 Your task will require using the Panda API to collect a set of information, and building a
