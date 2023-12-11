@@ -1,4 +1,5 @@
 ![horizontal-sm.webp](docs%2Fhorizontal-sm.webp)
+
 # Panda Technical Project - Laravel API Consumer
 
 Your task will require using the Panda API to collect a set of information, and building a
@@ -17,32 +18,28 @@ basic dashboard to view the information.
 You need to use the following:
 
 - [x] Laravel
-- [x] Laravel standards 
+- [x] Laravel standards
 - [x] Laravel services (e.g. Laravel Http, not curl, etc).
-- [ ] Tailwind
+- [x] Tailwind
 - [ ] Alpine (if you use JS)
 - [ ] A charts library of your choice. Recommendations would be Chart.js or Apache Echarts.
-- [ ] For the environment we recommend a docker-compose.yml in the main repo that brings
-  up any services you need. If you are not familiar with docker you can document any other
-  method required in a README.
-- [x] Please create a GitHub repo 
-- [ ] share it with dbfx on GitHub (https://github.com/dbfx)
+- [x] For the environment we recommend a docker-compose.yml.
+- [x] Create a GitHub repo
+- [ ] Build a basic template which is brand appropriate.
 
 ### Part 1: Authentication
 
-- [ ] Accept an email address and password for the production Panda backend. You can create
+- [x] Accept an email address and password for the production Panda backend. You can create
   this user and password (for your testing) by downloading the Panda app (visit
   https://get.joinpanda.com on mobile) and signing up for free.
 
-- [ ] Finish the sign up process so that your full account exists (choose keywords, etc).
-- [ ] You can then login as that user by sending a POST request to: https://api.joinpanda.com/api/auth/email/login/
-
+- [x] Finish the sign-up process so that your full account exists (choose keywords, etc).
+- [ ] You can then log in as that user by sending a POST request to: https://api.joinpanda.com/api/auth/email/login/
 With the following data:
-
-- [ ] “email”: “your@email.com”
-- [ ] “password”: “yourpassword”
-- [ ] This will return a “key” value in JSON which is your Bearer token for authenticating the
-  rest of your requests.
+  - “email”: “your@email.com”
+  - “password”: “yourpassword”
+  - This will return a “key” value in JSON which is your Bearer token for authenticating the
+    rest of your requests.
 
 ### Part 2: Forest Sessions
 
@@ -61,6 +58,10 @@ Examples would be:
 - [ ] Any other ideas you have
 - [ ] Try to make it usable, look good, and show information in a well-thought-out way.
 
+### Complete, Test and Share
+
+- [ ] share it with dbfx on GitHub (https://github.com/dbfx)
+
 ---
 
 ## Project Setup
@@ -73,7 +74,8 @@ If you are unfamiliar with sail you can find the documentation here: https://lar
 
 The project runs using the latest versions or at least latest stable versions of everything requested.
 
-The project was developed using `PHPStorm` as the IDE, but should be viewable in any IDE with the standards being checked with
+The project was developed using `PHPStorm` as the IDE, but should be viewable in any IDE with the standards being
+checked with
 `Laravel PINT` and `.editorconfig`.
 
 Clone the project
@@ -101,7 +103,6 @@ php artisan sail:install
 ./vendor/bin/sail npm install
 ./vendor/bin/sail npm run dev
 ```
-
 
 Stop Compose
 
