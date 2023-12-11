@@ -86,15 +86,24 @@ Start the project with Docker (Laravel Sail)
 
 ```bash
 php artisan sail:install
-./vendor/bin/sail up
+./vendor/bin/sail up -d
+./vendor/bin/sail composer install
+./vendor/bin/sail npm install
+./vendor/bin/sail npm run build
 ```
 
-Run the setup
+Development Environment
 
 ```bash
+php artisan sail:install
+./vendor/bin/sail up -d
+./vendor/bin/sail composer install
+./vendor/bin/sail npm install
+./vendor/bin/sail npm run dev
 ```
 
-Stop Composer
+
+Stop Compose
 
 ```bash
 ./vendor/bin/sail stop
